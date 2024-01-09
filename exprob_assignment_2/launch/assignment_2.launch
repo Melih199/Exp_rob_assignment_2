@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+	<include file="$(find exprob_assignment_2)/launch/world.launch"></include>
+	<include file="$(find exprob_assignment_2)/launch/spawn_rosbot.launch"></include>
+	<include file="$(find exprob_assignment_2)/launch/move_base.launch"></include>
+	<include file="$(find exprob_assignment_2)/launch/gmapping.launch"></include>	
+</launch>
