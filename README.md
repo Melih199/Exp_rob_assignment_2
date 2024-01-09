@@ -1,6 +1,11 @@
 # Experimental Robotics Laboratory - Assignment_2
+This project is developed by:
+1. *Natnael Berhanu Takele - s5446838*
+2. *Mustafa Melih Toslak - s5431021*
+3. *Ahmet Samet Kosum - s5635830*
+4. *Abdelouadoud Guelmami - s546728*
 
-This repository contains the ROS package implementation for the second assignment of the Experimental Robotics Laboratory course at the University degli Studi di Genova. The assignment focuses on utilizing various ROS packages to achieve a set of tasks with a mobile robot, specifically the Husarion ROSbot 2R, in both simulation and real-world scenarios.
+The repository contains the ROS package implementation for the second assignment of the Experimental Robotics Laboratory course at the University degli Studi di Genova. The assignment focuses on utilizing various ROS packages to achieve a set of tasks with a mobile robot, specifically the Husarion ROSbot 2R, in both simulation and real-world scenarios.
 
 ## Assignment Requirements
 
