@@ -127,7 +127,11 @@ roscd exprob_assignment_2/launch
     6- After finding all markers, the ROSbot will drive back to the initial position.
     
 
-<img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/6544d6e8-07da-439b-9ce8-91c8dc4929ef"/>
+
+video
+
+
+https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/fb49d170-e1ca-4d9e-8cc0-d4099d288b3d
 
 
 
