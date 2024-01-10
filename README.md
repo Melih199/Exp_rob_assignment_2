@@ -129,13 +129,9 @@ roscd exprob_assignment_2/launch
 
 https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/fb49d170-e1ca-4d9e-8cc0-d4099d288b3d
 
+https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/759f1c8e-c75b-4eb1-b756-7192334f6f4f
 
-
-<video src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/030a1a96-9804-433e-8f72-b53df70c4826.mp4" width="200" height="200">
-
-
-
-
+https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/b3619014-befc-45cf-8cb5-0189420a8bed
 
 ## Architecture and Pseudocode
 
