@@ -15,6 +15,6 @@ Before running the simulation code in this branch, ensure that you have the foll
    - [Aruco GitHub Repository](https://github.com/CarmineD8/aruco_ros.git)
 
 3. **ROSbot:**
-   - [Rosbot GitHub Repository](link_to_rosbot_repository)
+   - [Rosbot GitHub Repository](https://github.com/husarion/rosbot_ros.git) (noetic)
 
 Make sure to follow the installation instructions provided in the respective repositories to set up these dependencies correctly.
