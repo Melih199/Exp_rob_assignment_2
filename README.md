@@ -152,6 +152,32 @@ This durative action represents the robot returning home. The action requires th
 The goal of this problem is to navigate the robot to visit all waypoints, find all markers, and finally perform homing at the initial waypoint wp0. The initial state provides the starting conditions of the robot's position, visibility of markers, and initial counts of reached waypoints and detected markers
 
 ## Plan ([source](./exprob_assignment_2/pddl/plan.pddl))
+------------------------
+
+### goto_waypoint Interface
+ROS action interface for a "goto_waypoint" action using the MoveBase package. The action aims to make a robot move from one waypoint to another in a simulated environment. The code subscribes to action dispatch messages, received from the ROSPlan framework, to execute the specified waypoint movements.
+
+```cpp
+class goto_waypoint_Interface:
+    constructor(node_handle):
+        initialize
+
+    function concreteCallback(message):
+        extract information from message
+        create MoveBaseGoal based on target waypoint
+        create SimpleActionClient for /move_base
+        send goal to MoveBase
+        wait for result
+        log success/failure of the action
+        return true
+
+main function:
+    initialize ROS node
+    create goto_waypoint_Interface instance
+    run action interface
+
+
+```
 
 ### aruco_detector node 
 
