@@ -180,55 +180,6 @@ info_msg.marker_size = [size]
 self.aruco_info_pub.publish(info_msg)
 ```
 
-### robot_control node 
-
-This node is a simple PID controller for our robot it is using the information proided from  aruco_info topic and published the velocity commands 
-on /cmd_vel topic. To better understanding of this node check the flowchart above.
-
-
-```python
-self.vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
-self.aruco_info_sub = rospy.Subscriber('aruco_info', Aruco_info, self.aruco_callback)
-...
-def control_loop(self):
-        self.marker_turn=0
-        rate = rospy.Rate(20)
-        while not rospy.is_shutdown():
-
-            if self.marker_id_list[self.marker_turn] != self.vision_id:
-                # Rotate to search for the target ArUco marker
-                self.vel = Twist()          
-                self.vel.angular.z = -0.4
-                self.vel_pub.publish(self.vel)
-        
-            else:
-                self.angular_error = self.camera_center[0] - self.marker_center[0]
-                self.linear_error = self.target_size - self.marker_size[0]
-
-                # Proportional control
-                self.vel.linear.x = self.linear_gain * self.linear_error
-                self.vel.angular.z = self.angular_gain * self.angular_error
-
-                # Check for saturation in linear and angular velocities
-                self.vel.linear.x = max(min(self.vel.linear.x, 1.0), -1.0)
-                self.vel.angular.z = max(min(self.vel.angular.z, 1.0), -1.0)
-
-                # Publish velocity command
-                self.vel_pub.publish(self.vel)
-
-                if self.marker_size[0] >= self.target_size:
-            
-                    if self.marker_id_list[self.marker_turn] != 15:
-                        self.marker_turn = self.marker_turn+1
-                        self.vel.angular.z = -0.4
-                        self.vel_pub.publish(self.vel)
-                    else:
-                        rospy.signal_shutdown("exit")
-            
-            self.print_infos()
-            rate.sleep()
-```
-
 ### For real robot check the Rosbot_aruco branch !!!
 ```bash
 cd ~/Exp_rob_assignment_1
