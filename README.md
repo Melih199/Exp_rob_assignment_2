@@ -158,7 +158,9 @@ Robot searching for a marker at a specific waypoint. It requires the robot to be
 This durative action represents the robot returning home. The action requires the robot to be at the specified current waypoint, with no reached waypoints or detected markers. After executing the action, the robot moves to the home waypoint, performs homing, and marks the home waypoint as visited.
 
 ## Problem ([source](./exprob_assignment_2/pddl/problem.pddl))
+The goal of this problem is to navigate the robot to visit all waypoints, find all markers, and finally perform homing at the initial waypoint wp0. The initial state provides the starting conditions of the robot's position, visibility of markers, and initial counts of reached waypoints and detected markers
 
+## Plan ([source](./exprob_assignment_2/pddl/plan.pddl))
 
 ### aruco_detector node 
 
