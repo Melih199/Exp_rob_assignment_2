@@ -146,7 +146,7 @@ roscd exprob_assignment_2/launch
  <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/b8c52b03-4932-4621-b33b-1b6a228aa500.type" width="500" height="250">
 
 ## PDDL
-## Domain ([source](./exprob_assignment/pddl/domain.pddl)). 
+## Domain ([source](./exprob_assignment/pddl/domain.pddl)) 
 
 
 ### aruco_detector node 
