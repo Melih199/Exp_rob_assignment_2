@@ -155,7 +155,7 @@ The goal of this problem is to navigate the robot to visit all waypoints, find a
 ------------------------
 
 ### goto_waypoint Interface
-ROS action interface for a "goto_waypoint" action using the MoveBase package. The action aims to make a robot move from one waypoint to another in a simulated environment. The code subscribes to action dispatch messages, received from the ROSPlan framework, to execute the specified waypoint movements.
+Action interface for a "goto_waypoint" action using the MoveBase package. The action aims to make a robot move from one waypoint to another in a simulated environment. The node subscribes to action dispatch messages, received from the ROSPlan framework, to execute the specified waypoint movements.
 
 ```cpp
 class goto_waypoint_Interface:
@@ -175,6 +175,65 @@ main function:
     initialize ROS node
     create goto_waypoint_Interface instance
     run action interface
+
+
+```
+### home Interface
+Action interface for a "home" action. The action aims to make a robot move to a predefined home position. Similar to the goto_waypoint interface, this node subscribes to action dispatch messages, received from the ROSPlan framework, to execute the specified "home" action.
+
+```cpp
+class home_Interface:
+    constructor(node_handle):
+        initialize
+
+    function concreteCallback(message):
+        extract information from message
+        retrieve predefined home position based on waypoint
+        create SimpleActionClient for move_base
+        set goal to predefined home position
+        send goal to move_base
+        wait for result
+        log success/failure of the action
+        return true
+
+main function:
+    initialize ROS node
+    create home_Interface instance
+    run action interface
+
+
+
+```
+### search_marker Interface
+Action interface for a "search_marker" action. The action aims to make a robot search for a specific Aruco marker. The code subscribes to Aruco marker information messages (aruco_info) to detect the currently visible marker and then adjusts the robot's orientation until the desired marker is detected.
+
+```cpp
+global detected_markerID
+global search_markerID
+global cmd_vel_pub
+
+function aruco_callback(message):
+    update detected_markerID with the ID of the detected Aruco marker
+
+class search_marker_Interface:
+    constructor(node_handle):
+        initialize
+
+    function concreteCallback(message):
+        extract information from message
+        set search_markerID based on specified marker name
+        adjust robot's orientation until desired marker is detected
+        publish velocity commands to control robot's rotation
+        log completion of the action
+        return true
+
+main function:
+    initialize ROS node
+    subscribe to aruco_info topic with aruco_callback
+    advertise cmd_vel publisher
+    create search_marker_Interface instance
+    run action interface
+
 
 
 ```
