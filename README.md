@@ -131,10 +131,10 @@ roscd exprob_assignment_2/launch
 ## Architecture and Pseudocode
 
 
- <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/bea6ec18-fb28-4d73-97be-4d32e31baac7.type" width="500" height="400">
+ <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/bea6ec18-fb28-4d73-97be-4d32e31baac7.type" width="450" height="400">
 
 
- <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/b8c52b03-4932-4621-b33b-1b6a228aa500.type" width="500" height="400">
+ <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/b8c52b03-4932-4621-b33b-1b6a228aa500.type" width="450" height="400">
 
 ## PDDL
 ## Domain ([source](./exprob_assignment_2/pddl/domain.pddl))
