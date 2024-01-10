@@ -12,7 +12,7 @@ Before running the simulation code in this branch, ensure that you have the foll
    - [ROSPlan GitHub Repository](link_to_rosplan_repository)
 
 2. **Aruco:**
-   - [git@github.com:CarmineD8/aruco_ros.git]
+   - [Aruco GitHub Repository](git@github.com:CarmineD8/aruco_ros.git)
 
 3. **ROSbot:**
    - [Rosbot GitHub Repository](link_to_rosbot_repository)
