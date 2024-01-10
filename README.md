@@ -238,7 +238,7 @@ main function:
 
 ```
 
-### aruco_detector node 
+### aruco_detector node ([source](./exprob_assignment_2/script/aruco_detector.py))
 
 In this node we used the image information provided from /camera/color/image_raw and /camera/color/camera_info topics to find the ArUco markers.
 
