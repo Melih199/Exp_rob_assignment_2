@@ -11,10 +11,16 @@ Before running the simulation code in this branch, ensure that you have the foll
 1. **ROSPlan:**
    - [ROSPlan GitHub Repository](https://github.com/KCL-Planning/ROSPlan.git)
 
-2. **Aruco:**
+2. **move_base**
+   - [Move_base](http://wiki.ros.org/move_base)
+
+2. **gmapping**
+   - [Gmapping](http://wiki.ros.org/gmapping)
+
+3. **Aruco:**
    - [Aruco GitHub Repository](https://github.com/CarmineD8/aruco_ros.git)
 
-3. **ROSbot:**
+4. **ROSbot:**
    - [Rosbot GitHub Repository](https://github.com/husarion/rosbot_ros.git) (noetic)
 
 ## Installation
