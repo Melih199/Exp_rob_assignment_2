@@ -140,7 +140,7 @@ roscd exprob_assignment_2/launch
 ## Architecture and Pseudocode
 
 
- <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/d00278ad-3e3f-4d19-a68e-0dde32586d80" width="1000" height="500">
+ <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/d00278ad-3e3f-4d19-a68e-0dde32586d80.type" width="1000" height="500">
 
 
  <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/b8c52b03-4932-4621-b33b-1b6a228aa500.type" width="1000" height="500">
