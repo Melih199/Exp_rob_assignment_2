@@ -136,7 +136,16 @@ roscd exprob_assignment_2/launch
 
 <img src="https://github.com/Melih199/Exp_rob_assignment_1/blob/Rosbot_aruco_simulation/simulation_node.gif" width="1000" height="800"/>
 
-### aruco_detector node ###
+
+## Architecture and Pseudocode
+
+
+ <img src="https://github.com/Melih199/Exp_rob_assignment_1/assets/58879182/5d27ada1-4e73-41b3-b62d-09fe41a9a5f3.type" width="1000" height="500">
+
+
+ <img src="https://github.com/Melih199/Exp_rob_assignment_1/assets/58879182/5d27ada1-4e73-41b3-b62d-09fe41a9a5f3.type" width="1000" height="500">
+
+### aruco_detector node 
 
 In this node we used the image information provided from /camera/color/image_raw and /camera/color/camera_info topics to find the ArUco markers.
 
