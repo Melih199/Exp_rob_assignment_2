@@ -31,7 +31,7 @@ The fulfillment of these requirements is structured as follows:
   - Focused on the simulation aspect, this branch contains code for simulating the Husarion ROSbot 2R. It includes a node for plan generation using the ROSPlan framework, a node for handling vision data through the aruco package, and three nodes implementing actions for plan execution in a simulated environment.
 
 - **Rosbot_real Branch:**
-  - This branch adapts the code from the main branch to drive the real Husarion ROSbot 2R. It ensures the successful completion of the assigned tasks in a real-world scenario.
+  - This branch adapts the code from the simulation branch to drive the real Husarion ROSbot 2R. It ensures the successful completion of the assigned tasks in a real-world scenario.
 
 ## Repository Structure
 
