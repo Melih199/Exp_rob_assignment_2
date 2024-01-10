@@ -1,4 +1,4 @@
-# Rosbot_sim Branch
+# Rosbot_real Branch
 
 Welcome to the `Rosbot_sim` branch of the Experimental Robotics Laboratory - ROS Package Assignment repository. This branch is dedicated to work-on the real robot Husarion ROSbot 2R for the second assignment of the Experimental Robotics Laboratory course.
 
