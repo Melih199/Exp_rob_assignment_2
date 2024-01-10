@@ -7,7 +7,7 @@ Welcome to the `Rosbot_sim` branch of the Experimental Robotics Laboratory - ROS
 Before running the simulation code in this branch, ensure that you have the following dependencies installed:
 **Note:** The repository has been tested on Linux Ubuntu 20.04 LTS with ROS Noetic. 
 
-1. **ROSPlan:**  - [ROSPlan GitHub Repository](https://github.com/KCL-Planning/ROSPlan.git)
+1. **ROSPlan:**    - [ROSPlan GitHub Repository](https://github.com/KCL-Planning/ROSPlan.git)
 2. **move_base** - [Move_base](http://wiki.ros.org/move_base)
 2. **gmapping**  - [Gmapping](http://wiki.ros.org/gmapping)
 3. **Aruco:**    - [Aruco GitHub Repository](https://github.com/CarmineD8/aruco_ros.git)
