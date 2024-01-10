@@ -119,7 +119,7 @@ rosservice call /rosplan_planner_interface/planning_server
 rosservice call /rosplan_parsing_interface/parse_plan
 rosservice call /rosplan_plan_dispatcher/dispatch_plan
 ```
-Yes we know that it is little bit more commands to execute :) thats why we create the simle .bash file to run these commands.
+Yes we know that it is little bit more commands to execute :) thats why we created the simle .bash file to run these commands.
 
 **For problem generation, planning, and plan dispatch**:
 ```bash
