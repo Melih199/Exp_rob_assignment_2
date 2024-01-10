@@ -282,13 +282,11 @@ info_msg.marker_size = [size]
 self.aruco_info_pub.publish(info_msg)
 ```
 
-### For real robot check the Rosbot_aruco branch !!!
+### For real robot implementation check the Rosbot_real branch !!!
 ```bash
 cd ~/Exp_rob_assignment_1
-git checkout Rosbot_aruco
+git checkout Rosbot_real
 ```
 This command will change the branch of the repository for real robot. Then follow the instructions given in the readme file.
 
-## Conclusion and Future Improvements
 
-In concluding our Aruco Navigation project, our team has successfully developed a robust system for autonomous robot navigation using Aruco markers. The project's structure and implementation, detailed in the README, lay the foundation for future enhancements and applications.
