@@ -146,7 +146,18 @@ roscd exprob_assignment_2/launch
  <img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/b8c52b03-4932-4621-b33b-1b6a228aa500.type" width="500" height="250">
 
 ## PDDL
-## Domain ([source](./exprob_assignment_2/pddl/domain.pddl)) 
+## Domain ([source](./exprob_assignment_2/pddl/domain.pddl))
+
+### goto_waypoint action 
+This action represents a robot navigating from one waypoint to another with a fixed duration. It specifies the initial condition that the robot must be at the starting waypoint and defines the effects after the action is executed, including the robot's new position, marking the target waypoint as visited, and updating the count of reached waypoints.
+
+### search_marker
+Robot searching for a marker at a specific waypoint. It requires the robot to be at the designated waypoint and for the marker to be visible at the beginning of the action. The effects include marking the specific marker as found and updating the count of detected markers.
+
+### home
+This durative action represents the robot returning home. The action requires the robot to be at the specified current waypoint, with no reached waypoints or detected markers. After executing the action, the robot moves to the home waypoint, performs homing, and marks the home waypoint as visited.
+
+## Problem ([source](./exprob_assignment_2/pddl/problem.pddl))
 
 
 ### aruco_detector node 
