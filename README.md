@@ -125,7 +125,7 @@ roscd exprob_assignment_2/launch
     6- After finding all markers, the ROSbot will drive back to the initial position.
     
 
-<img src="https://github.com/Melih199/Exp_rob_assignment_1/blob/Rosbot_aruco_simulation/simulation_node.gif" width="1000" height="800"/>
+<img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/6544d6e8-07da-439b-9ce8-91c8dc4929ef" width="1000" height="800"/>
 
 
 ## Architecture and Pseudocode
