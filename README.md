@@ -9,7 +9,7 @@ Before running the simulation code in this branch, ensure that you have the foll
 
 
 1. **ROSPlan:**
-   - [ROSPlan GitHub Repository](link_to_rosplan_repository)
+   - [ROSPlan GitHub Repository](https://github.com/KCL-Planning/ROSPlan.git)
 
 2. **Aruco:**
    - [Aruco GitHub Repository](https://github.com/CarmineD8/aruco_ros.git)
