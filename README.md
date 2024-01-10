@@ -7,7 +7,6 @@ Welcome to the `Rosbot_sim` branch of the Experimental Robotics Laboratory - ROS
 Before running the simulation code in this branch, ensure that you have the following dependencies installed:
 **Note:** The repository has been tested on Linux Ubuntu 20.04 LTS with ROS Noetic. 
 
-
 1. **ROSPlan:**
    - [ROSPlan GitHub Repository](https://github.com/KCL-Planning/ROSPlan.git)
 
@@ -84,10 +83,7 @@ We'll need to "make" everything in our catkin workspace so that the ROS environm
 cd ~/assignment_2_ws
 catkin_make
 ```
-
-
 Fantastic! The installation process is complete, and now it's time to delve into the exciting world of robot exploration and experimentation. Let the robotics adventure begin! 🤖✨
-
 
 ## Launch
 
@@ -109,6 +105,7 @@ roslaunch exprob_assignment_2 planning.launch
 ```
 The execution of the launch command will provide us:
 -  ROSplan
+-  Aruco detector
 
 After launching these files now time to start problem generation, planning, and plan dispatch. For these services we can simply run the following ros commands:
 
