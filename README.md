@@ -131,7 +131,7 @@ https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/fb49d170-e1ca-4
 
 
 
-<img src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/030a1a96-9804-433e-8f72-b53df70c4826.mp4" width="450" height="400">
+<video src="https://github.com/Melih199/Exp_rob_assignment_2/assets/58879182/030a1a96-9804-433e-8f72-b53df70c4826.mp4" width="200" height="200">
 
 
 
