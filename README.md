@@ -1,6 +1,6 @@
 # Rosbot_sim Branch
 
-Welcome to the `Rosbot_sim` branch of the Experimental Robotics Laboratory - ROS Package Assignment repository. This branch is dedicated to simulating the Husarion ROSbot 2R for the second assignment of the Experimental Robotics Laboratory course.
+Welcome to the `Rosbot_sim` branch of the Experimental Robotics Laboratory - ROS Package Assignment repository. This branch is dedicated to work-on the real robot Husarion ROSbot 2R for the second assignment of the Experimental Robotics Laboratory course.
 
 ## Dependencies
 
@@ -11,15 +11,19 @@ Before running the simulation code in this branch, ensure that you have the foll
 2. **move_base** - [Move_base](http://wiki.ros.org/move_base)
 2. **gmapping**  - [Gmapping](http://wiki.ros.org/gmapping)
 3. **Aruco:**    - [Aruco GitHub Repository](https://github.com/CarmineD8/aruco_ros.git)
-4. **ROSbot:**   - [Rosbot GitHub Repository](https://github.com/husarion/rosbot_ros.git) (noetic)
 
-## Installation
+
+## Connection and Installation
+
+Connect the ROSbot with screen, keyboard and mouse. Thats it!
 
 Prepare the work space:
+```bash
 cd ~
 mkdir -r assignment_2_ws/src
 cd ~/ assignment_2_ws
 catkin_make
+```
 
 Clone the repositories mentioned above to your workspace:
 
@@ -27,7 +31,6 @@ Clone the repositories mentioned above to your workspace:
 cd ~/assignment_ws/src
 git clone https://github.com/KCL-Planning/ROSPlan.git
 git clone https://github.com/CarmineD8/aruco_ros.git
-gir clone https://github.com/husarion/rosbot_ros.git -b noetic
 ```
 Make sure to follow the installation instructions provided in the respective repositories to set up these dependencies correctly.
 
@@ -43,7 +46,7 @@ Build the workspace:
 cd ~/assignment_2_ws
 catkin_make
 ```
-Please remember that each time, when you open new terminal window, you will need to load system variables or simply add this command on your .bashrc file.
+Please remember that each time, when you open new terminal window, you will need to load system variables or simply add this command on ROSbot .bashrc file.
 
 ```bash
 source ~/assignment_2_ws/devel/setup.sh
@@ -65,6 +68,8 @@ cd script
 chmod +x *py
 cd ../launch
 chmod +x *bash
+roscd exprob_assignment_2
+git checkout Rosbot_real
 ```
 
 ### Make the Package
@@ -76,17 +81,42 @@ catkin_make
 ```
 Fantastic! The installation process is complete, and now it's time to delve into the exciting world of robot exploration and experimentation. Let the robotics adventure begin! 🤖✨
 
+### SSH Connection
+- First of all connect the robot to router same with your laptop.
+- Check the ip adress of the ROSbot with this command:
+ ```bash
+   ifconfig
+ ```
+- Add these commands to your .bashrc file:
+ ```bash
+  #ROSBOT << Real Robot >>
+  export ROS_MASTER_URI=http://<IP_of_ROSbot>:11311
+  export ROS_IP=<IP_of_ROSbot>
+ ```
+- Unplug the connections(screen,keyboard,mouse)
+- On your laptop login in ssh to husarion@<IP_of_ROSbot> passport:husarion
+   ```bash
+     ssh husarion@<IP_of_ROSbot>
+   ```
+- 🤖✨🤖✨🤖✨ We are ready!!! Put the robot on the prepared environment🤖✨🤖✨🤖✨
+
+
 ## Launch
 
 To run the simulation we need to run following launch files.
 
+The execution of the launch command of the all.launch file will provide us necessary nodes to deal with ROSbot such as: lidar and camera...
+**For real robot**:
+```bash
+roslaunch tutorial_pkg all.launch
+```
+
 **For simulation and SLAM**:
 ```bash
-roslaunch exprob_assignment_2 assignment_2.launch
+roslaunch exprob_assignment_2 gmapping.launch
+roslaunch exprob_assignment_2 move_base.launch
 ```
-The execution of the launch command will provide us:
--  The gazebo environment of the assignemnt
--  The ROSbot 
+The execution of the launch command will provide us: 
 -  Gmapping
 -  Move_base
 
@@ -248,8 +278,8 @@ main function:
 In this node we used the image information provided from /camera/color/image_raw and /camera/color/camera_info topics to find the ArUco markers.
 
 ```python
-self.camera_sub = rospy.Subscriber('/camera/color/image_raw', Image, self.image_callback)
-self.camera_info_sub = rospy.Subscriber('/camera/color/camera_info', CameraInfo, self.camera_callback)
+self.camera_sub = rospy.Subscriber('/camera/rgb/image_raw', Image, self.image_callback)
+self.camera_info_sub = rospy.Subscriber('/camera/rgb/camera_info', CameraInfo, self.camera_callback)
 
 ```
 
@@ -287,11 +317,5 @@ info_msg.marker_size = [size]
 self.aruco_info_pub.publish(info_msg)
 ```
 
-### For real robot implementation check the Rosbot_real branch !!!
-```bash
-cd ~/Exp_rob_assignment_1
-git checkout Rosbot_real
-```
-This command will change the branch of the repository for real robot. Then follow the instructions given in the readme file.
 
 
