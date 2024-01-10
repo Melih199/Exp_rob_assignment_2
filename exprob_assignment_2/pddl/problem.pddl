@@ -15,8 +15,8 @@
         (visible m12 wp2)
         (visible m13 wp3)
         (visible m15 wp4)
-        (= (detected-markers) 1)
-        (= (reached-waypoints) 1)
+        (= (detected-markers) 4)
+        (= (reached-waypoints) 4)
     )
 
     (:goal 
