@@ -61,7 +61,9 @@ To incorporate this repository into the "src" folder of your recently establishe
 
 ```bash
 git clone https://github.com/Melih199/Exp_rob_assignment_2.git
-cd script
+cd Exp_rob_assignment_2
+git checkout Rosbot_sim
+cd exprob_assignment_2/script
 chmod +x *py
 cd ../launch
 chmod +x *bash
